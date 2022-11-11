@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Recognition System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="predict">Recognize</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bg-pic"></div>
+
+    <main class="main">
+        <h1 class="main-heading">Handwritten Recognition System</h1>
+
+        <p class="content">
+            <em>
+                Handwritten Text Recognition is a technology that is much needed in this world as of today. This digit
+                Recognition system is used to recognize the digits from different sources like emails, bank cheque,
+                papers, images, etc. Before proper implementation of this technology we have relied on writing texts
+                with our own hands which can result in errors. It's difficult to store and access physical data with
+                efficiency. The project presents recognizing the handwritten digits (0 to 9) from the famous MNIST
+                dataset. Here we will be using artificial neural networks convalution neural network.
+            </em>
+        </p>
+    </main>
+</body>
+
+</html>
