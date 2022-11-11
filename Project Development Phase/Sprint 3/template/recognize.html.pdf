@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Recognition</title>
+    <link rel="stylesheet" href="/static/recognize.css">
+</head>
+
+<body style="background-image: url('static/img.jpg')">
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Recognize</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1 class="main-heading" style="color:red">Digit Recognition</h1>
+        <br>
+        <div class="flex-btn">
+            <form action='/predict' method="post" enctype="multipart/form-data">
+             <div>
+            <label for="file" width:200px>Choose </label>
+            <input type="file" id="file" name="photo" multiple / width="200px">
+          </div>
+            <input class="recognize-btn" type="submit" value="Recognize" style="background-color: blue">
+        </form>
+
+
+    </div>
+        
+    </main>
+
+    <script src="/static/recognize.js"></script>
+</body>
+
+</html>

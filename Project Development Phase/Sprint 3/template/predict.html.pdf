@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Recognition</title>
+    <link rel="stylesheet" href="/static/recognize.css">
+</head>
+
+<body style="background-image: url('static/img.jpg')">
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Recognize</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1 class="main-heading" style="color:red;" >Digit Recognition</h1>
+       <h2 style="position: absolute;left: 700px;top: 150px">Recognized Digit:[{{best.0}}]</h2>
+       
+
+       <div class="flex-btn" >
+            <div class="input-image-container" style="position: absolute;left: 700px;top: 250px">
+            <img src="static/garph/{{best.0}}ug.png" width="400" height="200">
+        </div>
+
+
+        <br><br><br><br><br>
+        <div class="flex-btn" style="position: absolute;right: 1000px;top: 250px">
+            <div class="input-image-container" style=" position: relative">
+<img src="{{url_for('static',filename='data/')}}{{img_name}}" width="200" height="200" />
+</div>
+<br><br>
+
+</main>
+
+    <script src="/static/recognize.js"></script>
+</body>
+
+</html>
